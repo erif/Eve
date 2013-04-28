@@ -4,7 +4,7 @@ from djangotoolbox.fields import ListField
 from datetime import date
 
 # Create your models here.
-class Links(models.Model):
+class Link(models.Model):
 	#__metaclass__ = models.SubfieldBase
 	TAGS_SEPARATOR = ','
 	#class Meta:

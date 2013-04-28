@@ -1,0 +1,5 @@
+How to:
+reload settings
+serve static files
+Errors
+Directory indexes are not allowed here.

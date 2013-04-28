@@ -1,9 +1,9 @@
-from Links.models import Links
+from Links.models import Link
 from django.contrib import admin
 
 
-class LinksAdmin(admin.ModelAdmin):
+class LinkAdmin(admin.ModelAdmin):
 	"""docstring for ClassName"""
 	
 		
-admin.site.register(Links, LinksAdmin)
+admin.site.register(Link, LinkAdmin)

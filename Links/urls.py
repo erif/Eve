@@ -5,8 +5,8 @@ from .views import Index, About
 urlpatterns = patterns('',
     url(r'^$', Index.as_view(),
         name='index'),
-    url('^about_us/$', About.as_view(), 
-        name='about_eve'),
+    url('^about/$', About.as_view(), 
+        name='about'),
     
     
     
