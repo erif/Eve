@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+{% load bootstrap_toolkit %}
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Eve | Share links with love!</title>
+    <meta name="description" content="">
+    <meta name="author" content="Marisniulkis Lescaille Cos">
+    {% bootstrap_stylesheet_tag %}
+    {% bootstrap_stylesheet_tag "responsive" %}
+    <style type="text/css">
+        body {
+            padding-top: 60px;
+        }
+    </style>
+    <!--[if lt IE 9]>
+    <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <script src="{{ STATIC_URL }}js/jquery-1.9.0.min.js"></script>
+    {% bootstrap_javascript_tag %}
+    {% block extra_head %}{% endblock %}
+</head>
+
+<body>
+
+<div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class="container">
+            <a class="brand" href="/">Eve</a>
+            <ul class="nav">
+                <li><a href="{% url index  %}" class="">Home</a></li>
+                <li><a href="{% url about_eve %}">About Eve</a></li>
+                </ul>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+
+    {% bootstrap_messages %}
+
+    {% block content %}Empty page{% endblock %}
+
+    <p><hr></p>
+
+    <footer class="row">
+        <div class="span6">
+            <p>This is <a href="https://github.com/dyve/django-bootstrap-toolkit">Eve</a></p>
+        </div>
+        <div class="span6" style="text-align:right">
+            <p>
+                &copy; <a href="http://twitter.com/rbeliser">Marisniulkis Lescaille Cos</a> 2013
+                |
+                <a href="http://blogs.prod.uci.cu/DevGirls">license</a>
+            </p>
+        </div>
+    </footer>
+
+</div> <!-- container -->
+
+</body>
+</html>
