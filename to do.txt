@@ -1,0 +1,2 @@
+Paginator para listLink, ya, pero mejorar la presentacion con bootstrap
+Anadir soporte de usuarios, reistro y demas

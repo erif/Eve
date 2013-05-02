@@ -3,7 +3,6 @@
 {% load bootstrap_toolkit %}
 
 
-
 {% block content %}
 
   <div class="container">
@@ -13,9 +12,31 @@
             <li><a href="{% url detailsLink link.id %}">{{ link.name }}</a></li>
      {% endfor %}
   </ul>
-  		
-  	 	
-  
+  </div>
+  <div class="pagination">
+		{% if is_paginated %}
+        {% if min_page_slice != 0 %}
+          <a href="?page=1" title="Primera pagina">...</a>&nbsp;&nbsp;
+        {% endif %}
+        {% if page_obj.has_previous %}
+          <a href="?page={{ page_obj.previous_page_number }}" title="Anterior">Anterior</a>&nbsp;&nbsp;
+        {% endif %}
+        {% for page_number in paginator.page_range|slice:page_slice %}
+          {% if page_number == page_obj.number %}
+            <strong>
+          {% endif %}
+          <a href="?page={{ page_number }}" title="Pagina " {{ page_number }}> {{ page_number }}</a>&nbsp;&nbsp;
+          {% if page_number == page_obj.number %}
+            </strong>
+          {% endif %}
+        {% endfor %}
+        {% if page_obj.has_next %}
+          <a href="?page={{ page_obj.next_page_number }}" title="Siguiente">Siguiente</a>&nbsp;&nbsp;
+        {% endif %}
+        {% if max_page_slice < paginator.num_pages %}
+          <a href="?page=last" title="Ultima pagina">...</a>
+        {% endif %}
+      {% endif %}  	
   </div>
   <div class="navbar">
   	<p>Top tags</p>

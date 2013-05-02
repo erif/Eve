@@ -2,6 +2,7 @@
 import datetime
 from django.views.generic import TemplateView, ListView, DetailView
 from django.views.generic.edit import CreateView, UpdateView, DeleteView
+from endless_pagination.views import AjaxListView
 from django.utils import timezone
 from django.core.urlresolvers import reverse
 from .models import Link
@@ -35,9 +36,20 @@ class LinkList(ListView):
     
     def get_queryset(self):
         return Link.objects.order_by('-date_posted') 
+    
     def set_context_page_slice(self, context, delta=10):
-        min_slice = 10
-        
+        min_slice = context['page_obj'].number - delta
+        max_slice = context['page_obj'].number + delta
+        min_slice = 0 if min_slice < 0 else min_slice
+        context['min_page_slice'] = min_slice
+        context['max_page_slice'] = max_slice
+        context['page_slice'] = '%s:%s' % (min_slice, max_slice)
+    
+    def get_context_data(self, **kwargs):
+        context = super(LinkList, self).get_context_data(**kwargs)
+        if context['is_paginated']:
+            self.set_context_page_slice(context)
+        return context  
         
         
         

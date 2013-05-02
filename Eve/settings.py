@@ -140,6 +140,7 @@ INSTALLED_APPS = (
     'bootstrap_toolkit',
     'bootstrapform',
     'taggit',
+    'endless_pagination',
 )
 
 # A sample logging configuration. The only tangible logging
