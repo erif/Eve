@@ -1,30 +1,29 @@
 {% extends "base.html" %}
+{% load bootstrap %}
+
+{% load bootstrap_toolkit %}
+
+{% block extra_head %}
+    {{ form.media }}
+    
+{% endblock %}
 
 {% block content %}
 
-  <div class="well">
+  <div class="form-actions">
   <h2>Adicionar un link</h2>
-  <p class="navbar-text">Eve is a place for save and share your links.
-    You can post a link and immediately will be visible to everyone
-    Also, you can create your own profile of private links and share it with your friends.       
-  </p>
-  <p>
-    
-    This is an alpha test, so you can find that some things are not quite right and there are some errors.
-    
-      </p>
-  <p>
-    If you have an idea about that can be useful, please put it <a href="http://comunidades.uci.cu/projects/eve/issues/new">here.</a>
-  </p>
-  <p>
-    Thanks for using Eve.
-  </p>
+  <form action="{% url addLink  %}" method="post" class="form-horizontal">
+  	{%csrf_token%}
+  	{{ form|bootstrap }}
+  	
+  	<div>
+		<button type="submit" class="btn btn-primary">Adicionar Link</button>
+	  </div>
+  </form>
   
-  <strong>Colaborators:</strong>
-  <ul>
-    <li>Yet to come...</li>
-    
-    </ul>
   
+  </div>
+  <div class="navbar">
+  	<p>Top tags</p>
   </div>
 {% endblock %}

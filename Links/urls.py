@@ -1,5 +1,7 @@
 from django.conf.urls.defaults import patterns, include, url
-from .views import Index, About
+from django.views.generic import DetailView
+from .views import Index, About, LinkAdd, LinkList
+from .models import Link
 
 
 urlpatterns = patterns('',
@@ -7,6 +9,15 @@ urlpatterns = patterns('',
         name='index'),
     url('^about/$', About.as_view(), 
         name='about'),
+    url('^addLink/$', LinkAdd.as_view(), 
+        name='addLink'),
+    url('^listLink/$', LinkList.as_view(), 
+        name='listLink'),
+
+    url('^detailsLink/(?P<pk>\d+)/$', DetailView.as_view(model=Link, context_object_name='item', 
+                                    template_name='Link/link_detail.html'), 
+        name='detailsLink'),
+    
     
     
     

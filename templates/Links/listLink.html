@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% load bootstrap_toolkit %}
+
+
+
+{% block content %}
+
+  <div class="container">
+  <h2>Enlaces recientes</h2>
+  <ul class="nav">
+  	{% for link in object_list %}
+            <li><a href="{% url detailsLink link.id %}">{{ link.name }}</a></li>
+     {% endfor %}
+  </ul>
+  		
+  	 	
+  
+  </div>
+  <div class="navbar">
+  	<p>Top tags</p>
+  </div>
+{% endblock %}

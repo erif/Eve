@@ -14,7 +14,7 @@ from django.utils.html import escape
 
 
 BOOTSTRAP_BASE_URL = getattr(settings, 'BOOTSTRAP_BASE_URL',
-                             '../static/bootstrap/'
+                             '/static/bootstrap/'
 )
 
 BOOTSTRAP_JS_BASE_URL = getattr(settings, 'BOOTSTRAP_JS_BASE_URL',

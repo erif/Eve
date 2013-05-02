@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% load bootstrap_toolkit %}
+
+
+
+{% block content %}
+
+ <div class="navbar">
+  <h2>{{item.name}}</h2>
+  <ul>
+  	   
+  	   <li>Descripcion: {{ item.description }}</li>
+  	   <li>Direccion: <a href="{{ item.linkURL }}">{{ item.linkURL }}</a></li>
+  	   <li>Publicado: {{ item.date_posted }}</li>
+  	   <li>Etiquetas: {{ item.tags }}</li>
+     
+  </ul>
+ </div>
+  <div class="navbar">
+  	<p>Top tags</p>
+  </div>
+{% endblock %}

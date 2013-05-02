@@ -23,16 +23,31 @@
 
 <body>
 
-<div class="navbar navbar-fixed-top">
+<div class="navbar navbar-fixed-top navbar-inverse">
     <div class="navbar-inner">
         <div class="container">
             <a class="brand" href="/">Eve</a>
             <ul class="nav">
-                <li><a href="{% url index  %}" class="">Home</a></li>
+                <li><a href="{% url index %}" class=""><i class="icon-home icon-black"></i>Home</a></li>
+                <li><a href="{% url listLink %}" class="">Explore Links</a></li>
+                <li><a href="{% url addLink %}" class="">Add Link</a></li>
                 <li><a href="{% url about %}" class="">About Eve</a></li>
+                
+                
                 </ul>
+                <div class="pull-right">
+                <form class="form-search">
+				<div class="input-append">
+				<input type="text" class="span2 search-query" placeholder="Buscar...">
+				<button type="submit" class="btn">Search</button>
+				</div>
+				</form>
+				</div>
         </div>
+        
+</div>
     </div>
+    
 </div>
 
 <div class="container">
@@ -45,7 +60,7 @@
 
     <footer class="row">
         <div class="span6">
-            <p>This is <a href="https://github.com/dyve/django-bootstrap-toolkit">Eve</a></p>
+            <p>This is <a href="{% url index %}">Eve</a></p>
         </div>
         <div class="span6" style="text-align:right">
             <p>

@@ -1,14 +1,20 @@
 # Forms here
 from django import forms
 from bootstrap_toolkit.widgets import BootstrapTextInput, BootstrapDateInput
-from .models import Links
-from django.contrib.admin.util import help_text
-
-
+from .models import Link
+from taggit.forms import *
 class LinkForm(forms.ModelForm):
+    
+    name = forms.CharField(widget=forms.TextInput(attrs={'placeholder':'Nombre del enlace'}), label="Nombre")
+    tags = TagField(label="Etiquetas")
+    description = forms.CharField(label="Descripcion", required=False)
+    linkURL = forms.CharField(label="URL del enlace")
     class Meta:
-        model = Links
-#    name = forms.CharField(help_text=u'Nombre para el enlace',)
-#    description = forms.CharField(required=False, widgets=forms.Textarea)
-#    linkUrl = forms.URLField()
-#    date_posted = forms.DateTimeField(widget=BootstrapDateInput)
+        model = Link
+        
+    def __init__(self, *args, **kwargs):
+        super(LinkForm, self).__init__(*args, **kwargs)
+        self.fields['name'].error_messages = {'required':'Debe escribir un nombre para el enlace.'}
+        self.fields['tags'].error_messages = {'required':'Estas etiquetas le ayudan a categorizar su contenido.'}
+        self.fields['linkURL'].error_messages = {'required':'Se requiere un enlace'}
+        

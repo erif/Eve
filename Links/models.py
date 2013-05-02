@@ -1,8 +1,8 @@
 from django.db import models
-from djangotoolbox.fields import ListField
-#from django.utils.translation import ugettext_lazy as _
+from taggit.managers import TaggableManager
+from django.utils.translation import ugettext_lazy as _
 from datetime import date
-
+from django.core.urlresolvers import reverse
 # Create your models here.
 class Link(models.Model):
 	#__metaclass__ = models.SubfieldBase
@@ -12,12 +12,17 @@ class Link(models.Model):
     #	verbose_name_plural = _('links')
     #	ordering = ('-date',)
 
-	name = models.CharField(max_length=100, default='Name of the page linked')
+	name = models.CharField(max_length=100)
 	description = models.CharField(max_length=250, blank=True, null=True)
 	linkURL = models.URLField()
-	date_posted = models.DateTimeField('date published')
-	#tags = ListField(verbose_name=('tags'))
+	date_posted = models.DateTimeField(auto_now_add=True)
+	tags = TaggableManager()
 	
+	
+	def get_absolute_url(self):
+		return reverse('detailsLink', kwargs={'pk': self.pk})#
+		
+		
 	def __unicode__(self):
 		return self.name
 
@@ -37,7 +42,6 @@ class Link(models.Model):
 	
 	def get_links_by_tags(self, value):
 		self.tags = []	
-
 
 
 
