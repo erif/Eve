@@ -1,2 +1,18 @@
-Paginator para listLink, ya, pero mejorar la presentacion con bootstrap
-Anadir soporte de usuarios, reistro y demas
+Mejorar la presentacion del Paginator para listLink con bootstrap o con ajax
+Anadir
+Soporte de usuarios, registro ongoing
+Probar activacion de cuenta por mail, se hace cambiando backend en urls.py por default
+Poner parametro next para q el logout se desloguee y vaya a la pagina de inicio YA
+En la pagina de perfil de usuario poner link para cambiar su password
+Cambiar a bootstrap3
+buscar q hace rel="nofollow"
+Cambiar el metodo __unicode__ de la clase Link para q en las templates sea solo llamar a {{ object }}
+buscar como poner mensajes de q debe loguearse para acceder a una funcionalidad-ongoing
+Poner eliminar en cascada para q se eliminen tambien las etiquetas relativas un objeto
+Cambiar los nombres de las plantillas a los q propone django _form para create, _list, _confirm_delete para borrar and so on.
+Add feeds de los ultimos links anadidos
+Manage sessions
+En adicionar link poner un link para adicionar otros o salir de esa vista, mas menos como se hace en admin
+Implementar o buscar como autocompletar las tags
+Hacer lo del perfil de los usuarios
+Incluir oauth para loguearse desde twitter o facebook o postear un link en estos sitios, tambien en LinkedIn

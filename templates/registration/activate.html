@@ -1,0 +1,7 @@
+{% extends 'base_site.html' %}
+{% load i18n %}
+
+{% block subcontainer %}
+  <p>{% trans 'Your account has being activated.' %}</p>
+  <p>{% trans 'So, now you can ' %}<a href="{% url auth_login %}">{% trans 'login' %}</a>.</p>
+{% endblock %}

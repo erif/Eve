@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% load bootstrap %}
+
+{% load bootstrap_toolkit %}
+
+{% block extra_head %}
+    {{ form.media }}
+    
+{% endblock %}
+
+
+{% block content %}
+  <div id="sidecontainer">
+      <p class="lead">Para completar el registro se le enviará un correo para confirmar su autenticidad.</p>
+      <p class="lead">Luego de que siga las instrucciones en el correo y + su registro podrá guardar sus links en un perfil privado.</p>
+  </div>
+  <div class="form-actions">
+    <form id="registration_form" action="{% url registration_register %}" method="post">
+      {% csrf_token %}
+      {{ form|bootstrap }}
+      <div>
+        <button type="submit" class="btn btn-primary" value="Signup">Signup</button> 
+      </div>
+    </form>
+  </div>
+{% endblock %}
+
+

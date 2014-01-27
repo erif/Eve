@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% load bootstrap %}
+
+{% load bootstrap_toolkit %}
+
+{% block extra_head %}
+    {{ form.media }}
+    
+{% endblock %}
+
+{% block content %}
+
+ <div class="navbar">
+  <h3>Eliminar este link?</h3>
+  {{object}}
+  <form action="{% url deleteLink object.id %}" method="post">
+    {% csrf_token %}
+    {{ form|bootstrap }}
+      <div>
+    <button type="submit" value="Delete" class="btn btn-primary">Delete</button>
+    </div>
+    </form>
+ </div>
+  <div class="navbar">
+  	<p>Top tags</p>
+  </div>
+{% endblock %}

@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% load bootstrap %}
+
+{% load bootstrap_toolkit %}
+
+{% block extra_head %}
+    {{ form.media }}
+    
+{% endblock %}
+
+{% block content %}
+  <div class="form-actions" >
+    <p>Register and get your profile of links private, share them and comment.</p>
+    
+    <form id="login-form" action="{% url auth_login %}?next={{ next }}" method="post">
+    {% csrf_token %}
+    {{ form|bootstrap }}
+      <div>
+    <button type="submit" class="btn btn-primary">Login</button>
+    </div>
+    </form>
+  </div>
+{% endblock %}

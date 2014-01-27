@@ -1,0 +1,52 @@
+{% extends 'Links/listLink.html' %}
+
+{% block title %}- {% trans 'Profile' %}: {{ user_.username }}{% endblock %}
+
+{% block subhead %}
+  <script type="text/javascript">
+    var USERNAME = "{{ user_.username }}";
+  </script>
+  <script type="text/javascript" src="{{ STATIC_URL }}js/user_profile.js"></script>
+{% endblock %}
+
+
+{% block presidecontainer %}
+  <div id="user-profile">
+    <h2>{% trans 'User profile' %}: {{ user_.username }}</h2>
+    <table >
+      <tbody>
+        {% if user == user_ or user_.first_name %}
+          <tr>
+            <th>{% trans 'First name' %}:</th>
+            <td><span {% if user == user_ %}contenteditable="true" href="{% url sunshine_profile_api user_.username %}" name="first_name"{% endif %} >{{ user_.first_name|default:'...' }}</span></td>
+          </tr>
+        {% endif %}
+        {% if user == user_ or user_.last_name %}
+          <tr>
+            <th>{% trans 'Last name' %}:</th>
+            <td><span {% if user == user_ %}contenteditable="true" href="{% url sunshine_profile_api user_.username %}" name="last_name"{% endif %} >{{ user_.last_name|default:'...' }}</span></td>
+          </tr>
+        {% endif %}
+        {% if user.is_authenticated %}
+          <tr>
+            {% if user == user_ %}
+              <th>{% trans 'e-mail' %}:</th>
+              <td><span contenteditable="true" href="{% url sunshine_profile_api user_.username %}" name="email">{{ user_.email }}</span></td>
+            {% else %}
+              <th>{% trans 'e-mail me' %}:</th>
+              <td>
+                <span id="email-sent-msg" class="hide">{% trans 'Your message has been sent!' %}</span>
+                <span id="email-toquickly-msg" class="hide">{% trans 'You are sending emails to quickly!. Wait a while and try again.' %}</span>
+                <form id="email-user-form" action="{% url ajax_email_user user_.username %}" method="post">
+                  {% csrf_token %}
+                  {{ message_form.as_p }}
+                  <input type="submit" value="{% trans 'Send' %}"/>
+                </form>
+              </td>
+            {% endif %}
+          </tr>
+        {% endif %}
+      </tbody>
+    </table>
+  </div>
+{% endblock %}

@@ -1,0 +1,8 @@
+{% load i18n %}
+
+<p>{% trans 'You has request for an account in' %} {{ site }}.</p>
+<p>{% trans 'This is your activation link' %} http://{{ domain }}{% url registration_activate activation_key %}.</p>
+<p>{% trans 'Your activation request expires in' %} {{ expiration_days }} {% trans 'days' %}.</p>
+
+
+{% trans 'Thanks for choosing us...' %}

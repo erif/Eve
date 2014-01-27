@@ -13,7 +13,12 @@
   	   <li>Descripcion: {{ item.description }}</li>
   	   <li>Direccion: <a href="{{ item.linkURL }}">{{ item.linkURL }}</a></li>
   	   <li>Publicado: {{ item.date_posted }}</li>
-  	   <li>Etiquetas: {{ item.tags }}</li>
+  	   <li>Etiquetas: {% for tag in item.tags.all %} {{tag.name}}, {%endfor%}</li>
+       <li>Agregado por: {{ item.posted_by }}</li>
+
+       <li><a href="{% url deleteLink item.id %}">Delete</a></li>
+
+          
      
   </ul>
  </div>

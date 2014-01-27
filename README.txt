@@ -1,7 +1,8 @@
-Eve a delicious like app to shre your links
+Eve a delicious like app to share your links
 Author: Marisniulkis Lescaille Cos
 Version: 1.0 
 DEPENDENCIES:
-Django 1.4
+Django 1.4.5
 djangotoolbox
-bootstrap_toolkit
+django-registration 1.0
+bootstrap_toolkit3

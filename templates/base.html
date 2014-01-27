@@ -11,6 +11,7 @@
     <style type="text/css">
         body {
             padding-top: 60px;
+            
         }
     </style>
     <!--[if lt IE 9]>
@@ -30,10 +31,24 @@
             <a class="brand" href="/">Eve</a>
             <ul class="nav">
                 <li><a href="{% url index %}" class=""><i class="icon-home icon-black"></i>Home</a></li>
+
+                {%if user.is_authenticated%}
                 <li><a href="{% url listLink %}" class="">Explore Links</a></li>
                 <li><a href="{% url addLink %}" class="">Add Link</a></li>
-                <li><a href="{% url about %}" class="">About Eve</a></li>
+                <li><a href="{% url tagView %}" class="">View Tags</a></li>
+
+                    {% if user.is_staff %}
+                    <li><a href="/admin/">Administration</a></li>
+                    {% endif %} 
+
+                {% else %}
+                <li><a href="{% url registration_register %}">Signup</a></li>
+                <li><a href="{% url auth_login %}  ">Login</a></li>
+
                 
+                {% endif %}
+                <li><a href="{% url about %}" class="">About Eve</a></li>
+
                 
                 </ul>
                 <div class="pull-right">
@@ -41,8 +56,12 @@
 				<div class="input-append">
 				<input type="text" class="span2 search-query" placeholder="Buscar...">
 				<button type="submit" class="btn">Search</button>
-				</div>
+                </div>
 				</form>
+                {% if user.is_authenticated %}
+                <li><a href="{% url profile slug=user.username %}">Mi cuenta {{ user.username }} / <a class="needs_next" href="{% url auth_logout %}">Logout</a></a></li>
+
+                {% endif %}
 				</div>
         </div>
         
