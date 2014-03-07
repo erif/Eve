@@ -11,13 +11,22 @@ from django.contrib.auth.decorators import login_required
 from django.contrib.auth import get_user
 from django.contrib.auth.models import User
 from django.utils.decorators import method_decorator
-from django.http import HttpResponseRedirect
+from django.http import HttpResponseRedirect, HttpResponse, Http404
 from django.shortcuts import render
+from django.views.decorators.csrf import csrf_exempt
+
 
 from .models import Link, UserProfile
 from .forms import LinkForm, DeleteLinkForm, UserProfileForm
+from .serializer import LinkSerializer
+
 
 from taggit.models import Tag 
+from rest_framework.renderers import JSONRenderer
+from rest_framework.parsers import JSONParser
+from rest_framework.views import APIView
+from rest_framework.response import Response
+from rest_framework import status
 
 
 class Index(TemplateView):
@@ -36,6 +45,7 @@ class LinkAdd(CreateView):
             saved_link = link_form.save(commit=False)
             saved_link.posted_by = request.user
             saved_link.save()
+            link_form.save_m2m()
             return HttpResponseRedirect(reverse('detailsLink', args=(saved_link.id,)))
         else:
             return self.get(request, link_form=LinkForm, *args, **kwargs)
@@ -126,3 +136,41 @@ class MyLinks(UserProfileDetailView):
     @method_decorator(login_required)
     def dispatch(self, *args, **kwargs):
         return super(UserProfile, self).dispatch( *args, **kwargs)
+
+class JSONLinkList(APIView):
+    def get(self, request, format=None):
+        links = Link.objects.all()
+        serializer = LinkSerializer(links, many=True)
+        return Response(serializer.data)
+
+    def post(self, request, format=None):
+        serializer = LinkSerializer(data=request.DATA)
+        if serializer.is_valid():
+            serializer.save()
+            return Response(serializer.data, status=status.HTTP_201_CREATED)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+class JSONLinkDetail(APIView):
+    def get_object(self, pk):
+        try:
+            return Link.objects.get(pk=pk)
+        except Link.DoesNotExist:
+            raise Http404
+
+    def get(self, request, pk, format=None):
+        link = self.get_object(pk)
+        serializer = LinkSerializer(link, data=request.DATA)
+        return Response(serializer.data)
+
+    def put(self, request, pk, format=None):
+        link = self.get_object(pk)
+        serializer = LinkSerializer(link, data=request.DATA)
+        if serializer.is_valid():
+            serializer.save()
+            return Response(serializer.data)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+    def delete(self, request, pk, format=None):
+        link = self.get_object(pk)
+        link.delete()
+        return Response(status=status.HTTP_204_NO_CONTENT)

@@ -1,8 +1,12 @@
 from django.conf.urls.defaults import patterns, include, url
 from django.views.generic import DetailView
 from django.contrib.auth.decorators import login_required as auth
-from .views import Index, About, LinkAdd, LinkList, TagView, LinkDelete, UserProfileDetailView, UserProfileEditView, MyLinks
+
+from .views import Index, About, LinkAdd, LinkList, TagView, LinkDelete, UserProfileDetailView, UserProfileEditView, MyLinks, JSONLinkList, JSONLinkDetail
 from .models import Link, UserProfile
+
+from rest_framework.urlpatterns import format_suffix_patterns
+
 
 
 urlpatterns = patterns('',
@@ -29,6 +33,8 @@ urlpatterns = patterns('',
         name="profile"),
     url(r'edit_profile/$', auth(UserProfileEditView.as_view()),
         name="edit_profile"),
-
+    url(r'^json_mylinks/$', JSONLinkList.as_view()),
+    url(r'^json_link/(?P<pk>\d+)/$', JSONLinkDetail.as_view() ),
      
 )
+urlpatterns = format_suffix_patterns(urlpatterns)

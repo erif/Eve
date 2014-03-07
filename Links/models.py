@@ -53,6 +53,7 @@ class Link(models.Model):
 class UserProfile(models.Model):
 	"""managing Users Profiles"""
 	user = models.OneToOneField(User, unique=True)
+	slug = models.SlugField()
 	url = models.URLField("Website", blank=True)
 	company = models.CharField(max_length=50, blank=True)
 	bio = models.TextField(null=True)
@@ -62,8 +63,7 @@ class UserProfile(models.Model):
 	def create_profile(sender, instance, created, **kwargs):
 		if created:
 			profile, created = UserProfile.objects.get_or_create(user=instance)
+User.profile = property(lambda u: UserProfile.objects.get_or_create(user=u)[0])
 
-	from django.db.models.signals import post_save
-	post_save.connect(create_profile, sender=User)
 		
 

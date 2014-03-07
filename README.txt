@@ -6,3 +6,5 @@ Django 1.4.5
 djangotoolbox
 django-registration 1.0
 bootstrap_toolkit3
+djangorestframework2.3.13
+taggit

@@ -20,7 +20,8 @@ class LinkForm(forms.ModelForm):
         super(LinkForm, self).__init__(*args, **kwargs)
         self.fields['name'].error_messages = {'required':'Debe escribir un nombre para el enlace.'}
         self.fields['tags'].error_messages = {'required':'Estas etiquetas le ayudan a categorizar su contenido.'}
-        self.fields['linkURL'].error_messages = {'required':'Se requiere un enlace'}
+        self.fields['linkURL'].error_messages = {'required':'Se requiere una URI'}
+
 
 class UserProfileForm(forms.ModelForm):
     """form for UserProfileForm"""

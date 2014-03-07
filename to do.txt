@@ -16,3 +16,4 @@ En adicionar link poner un link para adicionar otros o salir de esa vista, mas m
 Implementar o buscar como autocompletar las tags
 Hacer lo del perfil de los usuarios
 Incluir oauth para loguearse desde twitter o facebook o postear un link en estos sitios, tambien en LinkedIn
+Implementar funcionalidad, si el sitio se puede acceder, crawl el sitio y obtener el titulo de la pagina y los metas si tiene.
