@@ -11,13 +11,13 @@
 {% block content %}
 
   <div class="form-actions">
-  <h2>Adicionar un link</h2>
+  <h2>Add a link</h2>
   <form action="{% url addLink  %}" method="post" class="form-horizontal">
   	{%csrf_token%}
   	{{ form|bootstrap }}
   	
   	<div>
-		<button type="submit" class="btn btn-primary">Adicionar Link</button>
+		<button type="submit" class="btn btn-primary">Add Link</button>
 	  </div>
   </form>
   

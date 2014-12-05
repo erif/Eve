@@ -101,7 +101,7 @@ class TagView(ListView):
         return context
 
 class UserProfileDetailView(DetailView):
-    slug_field = "username"
+    slug_field = 'username'
     template_name = 'users/user_profile.html'
 
     def get_user(self):

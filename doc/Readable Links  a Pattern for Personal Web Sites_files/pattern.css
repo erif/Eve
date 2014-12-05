@@ -1,0 +1,122 @@
+@import url("../../../base-style.css");
+
+/*------------------*/
+/* page layout      */
+/*------------------*/
+
+.pattern-div {
+  background:     #FBFBFB;
+/*
+  background:     url(compass.background.gif) center no-repeat;
+*/
+  color:          #000000;
+  border:         thin solid #000066;
+  padding:        0em 2em 1em 2em;
+  margin-top:     1.5em;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family:    Helvetica, Arial, "Century Gothic", Univers, sans-serif;
+  font-variant:   small-caps;
+  color:          #000066;
+  background:     #FBFBFB;
+}
+
+p { text-align:   left; }
+
+hr { display:     none; }
+
+.index-page H2 {
+  border-top:     medium solid #000099;
+  padding-top:    .25em;
+}
+
+/*------------------*/
+/* title box        */
+/*------------------*/
+
+.p4pws-title {
+  float:          right;
+  position:       relative;
+  top:            -.5em;
+  left:           -1em;
+  background:     #FBFBFB;
+  color:          #000000;
+  padding:        .25em .25em .25em .5em;
+  font-family:    Helvetica, Arial, "Century Gothic", Univers, sans-serif;
+  font-variant:   small-caps;
+  font-size:      small;
+  margin-top:     .5em;
+  border:         medium outset #000066;
+  width:          22em
+}
+
+.p4pws-title img {
+  position:       relative;
+  float:          right;
+  top:            0px;
+  margin-left:    1em;
+}
+
+/*------------------*/
+/* pattern title    */
+/*------------------*/
+
+h1.pattern {
+  text-transform: none;
+}
+
+/*------------------*/
+/* pattern in text  */
+/*------------------*/
+
+.pattern {
+  text-transform:   lowercase;
+  font-variant:     small-caps;
+}
+
+
+/*------------------*/
+/* pattern details  */
+/*------------------*/
+
+.therefore {
+  padding:        .25em .5em .25em .5em;
+  margin-left:    2em;
+  margin-right:   2em;
+  background:     #F0F0F4;
+  color:          #000000;
+}
+
+/*------------------*/
+/* related patterns */
+/*------------------*/
+
+.related-patterns {
+  font-size:      smaller;
+}
+
+.related-patterns-intro {
+  border-top:     thin solid #000099;
+  padding-top:    .5em;
+  margin-top:     2em;
+}
+
+.related-patterns UL {
+  position:       relative;
+  font-family:    Helvetica, Arial, "Century Gothic", Univers, sans-serif;
+  top:            -.5em;
+  left:           -1em;
+}
+
+/*------------------*/
+/* change notice    */
+/*------------------*/
+
+.change-notice {
+  margin:           2em;
+  background-color: #FFFFF0;
+  border:           2px dotted red;
+  padding:          1em;
+  font-family:      Helvetica, Arial, "Century Gothic", Univers, sans-serif
+}

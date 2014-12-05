@@ -1,0 +1,962 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0052)http://www.tejedoresdelweb.com/307/article-5671.html -->
+<html lang="es-CL"><head><title>Tejedores del Web - URI y URL</title><!--begin-box:HTMLencabezado:0:933--><!--loc('* Encabezado, requerido en todas las páginas HTML de su sitio')-->
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<style type="text/css">@import url( stylesheet-136.css );
+</style>
+
+<meta content=", HTML, Webmaster, Diseno Web, Sitios Web, Creacion Sitios Web, Capacitacion Web, Manual HTML, Carlos Castillo, ChaTo" name="keywords">
+<meta content="  Se explican las motivaciones de diseño y el formato de los Uniform Resource Identifiers (identificadores
+uniformes de recursos) y los Uniform Resource Locators (localizadores
+uniformes de recursos).
+" name="description">
+<meta content="MSHTML 6.00.3790.449" name="GENERATOR">
+<meta content="http://engine.newtenberg.com" name="Newtenberg-Server">
+<meta content="iso-8859-1" name="Content-Encoding"><link href="http://www.tejedoresdelweb.com/" type="text/html" rel="Top">
+<script type="text/javascript">
+var __aid = '5671';
+var __pvid = Array('2926', '19429');
+var __cid = '304';
+var __iid = '307';
+var __pnid = Array('2140', '768');
+</script>
+
+<script src="Tejedores%20del%20Web%20-%20URI%20y%20URL_files/channels-304_js_main.js" type="text/javascript">
+
+			</script>
+
+<script src="Tejedores%20del%20Web%20-%20URI%20y%20URL_files/channels-304_js_paginator.js" type="text/javascript">
+
+			</script>
+
+<script src="Tejedores%20del%20Web%20-%20URI%20y%20URL_files/channels-304_js_cookies.js" type="text/javascript">
+
+			</script>
+
+<script src="Tejedores%20del%20Web%20-%20URI%20y%20URL_files/urchin.js" type="text/javascript">
+</script>
+
+<script type="text/javascript">
+_uacct = "UA-77328-2";
+urchinTracker();
+</script>
+<!--end-box--></head>
+<body style="MARGIN: 0px">
+<table cellpadding="0" cellspacing="0" align="center" border="0" width="750">
+  <tbody>
+  <tr>
+    <td>
+      <table cellpadding="0" cellspacing="0" align="center" border="0" width="750">
+        <tbody>
+        <tr>
+          <td class="FondoBlanco1BG" colspan="3" valign="top"><!--begin-box:FechaHoy:Fecha:11382--><!--* Fecha actual-->
+            <table cellpadding="0" cellspacing="0" border="0" width="100%">
+              <tbody>
+              <tr>
+                <td class="FechaBD">
+                  <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                    <tbody>
+                    <tr>
+                      <td class="FechaBG">
+                        <div class="FechaP">
+                        <script type="text/javascript">
+			var days = new Array( "Domingo", "Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado" );
+			var months = new Array( "Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre" );
+			var d = new Date();
+			var day   = d.getDate();
+			var month = d.getMonth();
+			var year  = d.getYear();
+			if( year < 1900 ) {
+				year += 1900;
+			}
+			var hour  = d.getHours();
+			var min   = d.getMinutes();
+			
+			document.write( '' + days[d.getDay()] + ', ' + day + ' de ' + months[month] + ' de ' + year);
+			</script>Jueves, 5 de Junio de 2014
+                        </div></td></tr></tbody></table></td></tr></tbody></table><!--end-box--><!--begin-box:Banner:Encabezado:934--><!--loc('* Recurso del Canal')-->
+            <div style="FONT-SIZE: 1px; LINE-HEIGHT: 18px; HEIGHT: 18px" align="center"></div>
+            <table cellpadding="0" cellspacing="0" border="0" width="100%">
+              <tbody>
+              <tr>
+                <td class="EncabezadoBC">
+                  <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                    <tbody>
+                    <tr>
+                      <td class="EncabezadoBD" style="PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px">
+                        <div class="EncabezadoT1"><span style="WHITE-SPACE: nowrap"><a class="EncabezadoT1LINK" href="http://www.tejedoresdelweb.com/">
+                        <div align="center"><img alt="" src="Tejedores%20del%20Web%20-%20URI%20y%20URL_files/channels-304_banner.gif" name="banner" height="60" align="absMiddle" border="0" hspace="0" width="500"></div></a></span></div></td></tr></tbody></table></td></tr></tbody></table>
+            <div style="FONT-SIZE: 1px; LINE-HEIGHT: 30px; HEIGHT: 30px" align="center"></div><!--end-box--></td></tr>
+        <tr>
+          <td valign="top" width="20%">
+            <table cellpadding="0" cellspacing="0" border="0" width="100%">
+              <tbody>
+              <tr>
+                <td class="FondoBlanco1BG" colspan="2" valign="top"><!--begin-box:BordeArriba:Encabezado:15613--><!--loc('* Recurso del Canal')-->
+                  <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                    <tbody>
+                    <tr>
+                      <td class="EncabezadoBD" style="PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px">
+                        <div class="EncabezadoT1"><span style="WHITE-SPACE: nowrap"><img alt="" src="Tejedores%20del%20Web%20-%20URI%20y%20URL_files/channels-304_bordearriba.png" name="bordearriba" height="20" align="left" border="0" hspace="0" width="150"></span></div></td></tr></tbody></table><!--end-box--></td></tr>
+              <tr>
+                <td class="FondoBlanco1BG" valign="top" width="15%"><!--begin-box:Lateral_Portada_Link:LinkPortada:15626--><!--* Menú Vertical-->
+                  <div style="FONT-SIZE: 1px; LINE-HEIGHT: 10px; HEIGHT: 10px" align="center"></div>
+                  <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                    <tbody>
+                    <tr>
+                      <td class="LinkPortadaBD">
+                        <table border="0" width="100%">
+                          <tbody>
+                          <tr>
+                            <td class="LinkPortadaT2"><a class="LinkPortadaT2LINK" href="http://www.tejedoresdelweb.com/307/channel.html">Home</a></td></tr>
+                          <tr>
+                            <td class="LinkPortadaT1"><a class="LinkPortadaT1LINK" href="http://www.tejedoresdelweb.com/307/propertyname-768.html">Temas</a></td></tr></tbody></table></td></tr></tbody></table><!--end-box--><!--begin-box:Lateral_Preguntas_Link:LinkPortada:15628--><!--loc('* Menú Vertical')-->
+                  <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                    <tbody>
+                    <tr>
+                      <td class="LinkPortadaBD">
+                        <table border="0" width="100%">
+                          <tbody>
+                          <tr>
+                            <td class="LinkPortadaT2"><a class="LinkPortadaT2LINK" href="http://www.tejedoresdelweb.com/307/propertyvalue-26544.html">Preguntas</a></td></tr></tbody></table></td></tr></tbody></table>
+                  <div style="FONT-SIZE: 1px; LINE-HEIGHT: 20px; HEIGHT: 20px" align="center"></div><!--end-box--><!--begin-box:Buscador_Pequenno:Buscador:4063--><!--loc('Formulario para ingresar consulta')-->
+                  <div style="FONT-SIZE: 1px; LINE-HEIGHT: 10px; HEIGHT: 10px" align="center"></div>
+                  <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                    <tbody>
+                    <tr>
+                      <td class="BuscadorBC">
+                        <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                          <tbody>
+                          <tr>
+                            <td class="BuscadorBD">
+                              <form style="MARGIN-BOTTOM: 0px" name="searchForm" onsubmit="return doSearch()" action="about:blank">
+                              <div class="BuscadorP" style="MARGIN-BOTTOM: 0px"><input class="BuscadorPP" size="11" name="keywords"> <input class="BuscadorPPLINK" value="Buscar" type="submit">
+                              <script type="text/javascript">
+			function doSearch() {
+				// Delete search's cookies
+                if( "exists".match ) {
+                    var results = document.cookie.match(/\w+=/g);
+					if( results ) {
+						for( var i=0; i < results.length; i++ ) {
+							if( results[i].substring(0,7) == 'search_' ) {
+								deleteCookie( results[i].substring(0,results[i].length-1) );
+							}
+						}
+					}
+                }
+
+				setCookie('search_keywords',document.searchForm.keywords.value);
+				setCookie('search_start', 0 );
+				setCookie('search_group', 0 );
+				setCookie('search_expanded', 0 );
+				document.location.href="find-results.html";
+				return false;
+			}
+			</script>
+                              </div></form></td></tr></tbody></table></td></tr></tbody></table>
+                  <div style="FONT-SIZE: 1px; LINE-HEIGHT: 20px; HEIGHT: 20px" align="center"></div><!--end-box--><!--begin-box:AD_Adsense_Vertical_Largo:0:15644--><!--loc('* Artículo Completo')-->
+                  <div style="FONT-SIZE: 1px; LINE-HEIGHT: 10px; HEIGHT: 10px" align="center"></div>
+                  <table cellpadding="2" cellspacing="0" border="0" width="100%">
+                    <tbody>
+                    <tr>
+                      <td class="0BC">
+                        <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                          <tbody>
+                          <tr>
+                            <td class="0BD">
+                              <table cellpadding="2" cellspacing="0" border="0" width="100%">
+                                <tbody>
+                                <tr>
+                                <td class="0BG">
+                                <p class="0P" style="TEXT-ALIGN: center" align="center">
+                                <script class="0P" type="text/javascript">
+//
+google_ad_client = 'pub-5460300846434528';
+google_ad_width = 120;
+google_ad_height = 600;
+google_ad_format = '120x600_as';
+google_ad_type = 'text_image';
+google_ad_channel ='';
+google_color_border = '74BD48';
+google_color_bg = 'DFEFDF';
+google_color_link = '0000FF';
+google_color_url = '002000';
+google_color_text = '000000';
+//
+</script>
+
+                                <script class="0P" src="Tejedores%20del%20Web%20-%20URI%20y%20URL_files/show_ads.js" type="text/javascript">
+</script><iframe name="google_ads_frame" src="Tejedores%20del%20Web%20-%20URI%20y%20URL_files/ads.xhtml" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" frameborder="0" height="600" scrolling="no" width="120">&lt;img
+ height="1" width="1" border="0" 
+src="http://pagead2.googlesyndication.com/pagead/imp.gif?event=noiframe&amp;client=ca-pub-5460300846434528&amp;dt=1401969162775&amp;lmt=1401969161&amp;format=120x600_as&amp;output=html&amp;url=ftp%3A%2F%2F10.0.0.22%2Fdocumentacion%2FComputer%2520Science%2FURL%2FTejedores%2520del%2520Web%2520-%2520URI%2520y%2520URL.htm&amp;color_bg=DFEFDF&amp;color_text=000000&amp;color_link=0000FF&amp;color_url=002000&amp;color_border=74BD48&amp;ad_type=text_image&amp;cc=100&amp;u_h=768&amp;u_w=1360&amp;u_ah=711&amp;u_aw=1360&amp;u_cd=24&amp;u_tz=-240&amp;u_his=2&amp;u_nplug=3&amp;u_nmime=3"
+ /&gt;</iframe>
+                                </p></td></tr></tbody></table></td></tr></tbody></table></td></tr></tbody></table>
+                  <div style="FONT-SIZE: 1px; LINE-HEIGHT: 10px; HEIGHT: 10px" align="center"></div><!--end-box--><!--begin-box:Lateral_Licencia:Caluga:14607--><!--loc('* Recursos del eidox en la misma posición')-->
+                  <div style="FONT-SIZE: 1px; LINE-HEIGHT: 30px; HEIGHT: 30px" align="center"></div>
+                  <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                    <tbody>
+                    <tr>
+                      <td class="CalugaT0">Licencia</td></tr></tbody></table>
+                  <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                    <tbody>
+                    <tr>
+                      <td class="CalugaBD"><span align="center">
+                        <div align="center"><!-- Licencia de Creative Commons --><a href="http://creativecommons.org/licenses/by-sa/2.0/deed.es" rel="license"><img alt="Licencia de Creative Commons" src="Tejedores%20del%20Web%20-%20URI%20y%20URL_files/somerights20.gif" border="0"></a> <!-- /Licencia de Creative Commons --><!--
+
+<rdf:RDF xmlns="http://web.resource.org/cc/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<Work rdf:about="">
+   <dc:title>Tejedores del Web</dc:title>
+   <dc:creator><Agent>
+      <dc:title>Carlos Castillo</dc:title>
+   </Agent></dc:creator>
+   <dc:rights><Agent>
+      <dc:title>Carlos Castillo</dc:title>
+   </Agent></dc:rights>
+   <dc:type rdf:resource="http://purl.org/dc/dcmitype/Interactive" />
+   <license rdf:resource="http://creativecommons.org/licenses/by-sa/2.0/" />
+</Work>
+
+<License rdf:about="http://creativecommons.org/licenses/by-sa/2.0/">
+   <permits rdf:resource="http://web.resource.org/cc/Reproduction" />
+   <permits rdf:resource="http://web.resource.org/cc/Distribution" />
+   <requires rdf:resource="http://web.resource.org/cc/Notice" />
+   <requires rdf:resource="http://web.resource.org/cc/Attribution" />
+   <permits rdf:resource="http://web.resource.org/cc/DerivativeWorks" />
+   <requires rdf:resource="http://web.resource.org/cc/ShareAlike" />
+</License>
+
+</rdf:RDF>
+
+--></div></span></td></tr></tbody></table>
+                  <div style="FONT-SIZE: 1px; LINE-HEIGHT: 20px; HEIGHT: 20px" align="center"></div><!--end-box--><!--begin-box:Spacer135:Encabezado:15648--><!--loc('* Recurso del Canal')-->
+                  <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                    <tbody>
+                    <tr>
+                      <td class="EncabezadoBC">
+                        <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                          <tbody>
+                          <tr>
+                            <td class="EncabezadoBD" style="PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px">
+                              <div class="EncabezadoT1"><span style="WHITE-SPACE: nowrap"><img alt="" src="Tejedores%20del%20Web%20-%20URI%20y%20URL_files/channels-304_spacer135.gif" name="spacer135" height="2" align="left" border="0" hspace="0" width="135"></span></div></td></tr></tbody></table></td></tr></tbody></table><!--end-box--></td>
+                <td class="FondoLateralBG" valign="top" width="5%"><!--begin-box:Spacer15:Encabezado:15646--><!--loc('* Recurso del Canal')-->
+                  <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                    <tbody>
+                    <tr>
+                      <td class="EncabezadoBC">
+                        <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                          <tbody>
+                          <tr>
+                            <td class="EncabezadoBD" style="PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px">
+                              <div class="EncabezadoT1"><span style="WHITE-SPACE: nowrap"><img alt="" src="Tejedores%20del%20Web%20-%20URI%20y%20URL_files/channels-304_spacer_left.gif" name="spacer_left" height="2" align="left" border="0" hspace="0" width="15"></span></div></td></tr></tbody></table></td></tr></tbody></table><!--end-box--></td></tr>
+              <tr>
+                <td class="FondoBlanco1BG" colspan="2" valign="top"><!--begin-box:BordeAbajo:Encabezado:15615--><!--loc('* Recurso del Canal')-->
+                  <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                    <tbody>
+                    <tr>
+                      <td class="EncabezadoBD" style="PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px">
+                        <div class="EncabezadoT1"><span style="WHITE-SPACE: nowrap"><img alt="" src="Tejedores%20del%20Web%20-%20URI%20y%20URL_files/channels-304_bordeabajo.png" name="bordeabajo" height="20" align="left" border="0" hspace="0" width="150"></span></div></td></tr></tbody></table><!--end-box--></td></tr></tbody></table></td>
+          <td class="FondoBlanco1BG" valign="top" width="4%"></td>
+          <td valign="top" width="76%">
+            <table cellpadding="0" cellspacing="0" border="0" width="100%">
+              <tbody>
+              <tr>
+                <td class="FondoBlanco1BG" colspan="2" valign="top"><!--begin-box:BarraTemaActual:BarraTemaActual:15636--><!--loc('Barra de posición del valor de clasificando')-->
+                  <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                    <tbody>
+                    <tr>
+                      <td class="BarraTemaActualBD">
+                        <table cellpadding="3" cellspacing="1" border="0" width="100%">
+                          <tbody>
+                          <tr>
+                            <td class="BarraTemaActualT2"><a class="BarraTemaActualT2LINK" href="http://www.tejedoresdelweb.com/307/propertyname-768.html">Temas</a> 
+                              &gt;&gt; <a class="BarraTemaActualT2LINK" href="http://www.tejedoresdelweb.com/307/propertyvalue-2926.html">HTML 
+                              y 
+XHTML</a></td></tr></tbody></table></td></tr></tbody></table><!--end-box--><!--begin-box:ArticuloCompleto:Completo:948--><!--loc('* Artículo Completo')-->
+                  <table cellpadding="3" cellspacing="0" border="0" width="100%">
+                    <tbody>
+                    <tr>
+                      <td class="CompletoBC">
+                        <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                          <tbody>
+                          <tr>
+                            <td class="CompletoBD">
+                              <table cellpadding="10" cellspacing="0" border="0" width="100%">
+                                <tbody>
+                                <tr>
+                                <td class="CompletoT2">Por Cristian 
+                                Gutierrez</td></tr>
+                                <tr>
+                                <td class="CompletoT1">URI y URL</td></tr>
+                                <tr>
+                                <td class="CompletoPP">Se explican las 
+                                motivaciones de diseño y el formato de los 
+                                Uniform Resource Identifiers (identificadores 
+                                uniformes de recursos) y los Uniform Resource 
+                                Locators (localizadores uniformes de recursos). 
+                                </td></tr>
+                                <tr>
+                                <td class="CompletoBG"><a>
+                                </a><ul><a>
+                                </a><li class="CompletoP"><a></a><a class="CompletoPLINK" href="http://www.tejedoresdelweb.com/307/article-5671.html#h2_1">Introducción</a>
+                                </li><li class="CompletoP"><a class="CompletoPLINK" href="http://www.tejedoresdelweb.com/307/article-5671.html#h2_2">¿Sintaxis 
+                                universal?</a>
+                                </li><li class="CompletoP"><a class="CompletoPLINK" href="http://www.tejedoresdelweb.com/307/article-5671.html#h2_3">URIs: 
+                                Identificadores Universales de Recursos</a>
+                                </li><li class="CompletoP"><a class="CompletoPLINK" href="http://www.tejedoresdelweb.com/307/article-5671.html#h2_4">URLs: 
+                                Localizadores Uniformes de Recursos</a>
+                                </li><li class="CompletoP"><a class="CompletoPLINK" href="http://www.tejedoresdelweb.com/307/article-5671.html#h2_5">URNs: 
+                                Nombres Uniformes de Recursos</a>
+                                </li><li class="CompletoP"><a class="CompletoPLINK" href="http://www.tejedoresdelweb.com/307/article-5671.html#h2_6">Diseño</a>
+                                </li><li class="CompletoP"><a class="CompletoPLINK" href="http://www.tejedoresdelweb.com/307/article-5671.html#h2_7">Satisfacción 
+                                de criterios</a>
+                                </li><li class="CompletoP"><a class="CompletoPLINK" href="http://www.tejedoresdelweb.com/307/article-5671.html#h2_8">Sintaxis</a>
+                                </li><li class="CompletoP"><a class="CompletoPLINK" href="http://www.tejedoresdelweb.com/307/article-5671.html#h2_9">Esquemas 
+                                y Aplicaciones</a>
+                                </li><li class="CompletoP"><a class="CompletoPLINK" href="http://www.tejedoresdelweb.com/307/article-5671.html#h2_10">Implicancias, 
+                                Críticas y Limitaciones</a>
+                                </li><li class="CompletoP"><a class="CompletoPLINK" href="http://www.tejedoresdelweb.com/307/article-5671.html#h2_11">Referencias</a>
+                                </li><li class="CompletoP"><a class="CompletoPLINK" href="http://www.tejedoresdelweb.com/307/article-5671.html#h2_12">Apendice: 
+                                Gramática para URI</a></li></ul>
+                                <table cellpadding="0" cellspacing="5" align="right" border="0">
+                                <tbody>
+                                <tr>
+                                <td>
+                                <script type="text/javascript">
+       function articleSend5671() {
+            var features = 'toolbar=0,status=0,menubar=0,scrollbars=1,resizable=0,location=0,directories=0,width=650,height=510';
+            if( window.screen ) {
+                features += ',left=' + (screen.width-450)/2;
+                features += ',top=' + (screen.height-410)/2;
+           }
+           var wHnd = window.open('http://engine.newtenberg.com/readroom/mail_article.cgi?cid=304&aid=5671', 'sendArticle', features );
+       }
+	</script>
+
+                                <table cellpadding="2" cellspacing="0" align="right">
+                                <tbody>
+                                <tr>
+                                <td style="BORDER-RIGHT: medium none; BORDER-TOP: medium none; BORDER-LEFT: medium none; BORDER-BOTTOM: medium none">
+                                <div class="CompletoP" style="FONT-SIZE: x-small"><a class="CompletoPLINK" href="javascript:articleSend5671()"><img src="Tejedores%20del%20Web%20-%20URI%20y%20URL_files/channels-304_link_mail.gif" height="16" align="absMiddle" border="0" hspace="1" width="16"><br>Mail</a></div></td></tr></tbody></table></td>
+                                <td></td>
+                                <td>
+                                <table cellpadding="2" cellspacing="0" align="right">
+                                <tbody>
+                                <tr>
+                                <td style="BORDER-RIGHT: medium none; BORDER-TOP: medium none; BORDER-LEFT: medium none; BORDER-BOTTOM: medium none">
+                                <div class="CompletoP" style="FONT-SIZE: x-small"><a class="CompletoPLINK" href="http://www.tejedoresdelweb.com/307/printer-5671.html"><img src="Tejedores%20del%20Web%20-%20URI%20y%20URL_files/channels-304_link_print.gif" height="16" align="absMiddle" border="0" hspace="1" width="18"><br>Print</a></div></td></tr></tbody></table></td>
+                                <td></td></tr></tbody></table>
+                                <div class="CompletoH2"><a name="h2_1">Introducción</a></div>
+                                <p class="CompletoP">En este documento se muestran 
+                                los diferentes (pero confluyentes) esfuerzos por 
+                                dar a la Web un marco en el cual definir una 
+                                codificación para nombres y direcciones de 
+                                recursos disponibles en ella. En la Web existe 
+                                un sinnúmero de objetos, a los que se puede 
+                                acceder mediante una variedad de protocolos, 
+                                inventados, en desarrollo o a ser ideados en el 
+                                futuro. Para poder abstraer la idea de "objeto 
+                                genérico", se necesita disponer de conceptos que 
+                                den sentido a nombres y direcciones en la 
+                                Web.</p>
+                                <p class="CompletoP">Un Identificador Universal de 
+                                Recursos (URI) es un miembro de este conjunto 
+                                universal de nombres, en un cierto espacio de 
+                                nombres y con una dirección referida a un cierto 
+                                protocolo, ambos previamente registrados. un 
+                                Localizador Uniforme de Recursos (URL), es 
+                                báciamente un caso particular de URI que expresa 
+                                una dirección, mapeada a un algoritmo de 
+                                recuperación del objeto que sua protocolos de 
+                                comunicación a través de la red. Por último, un 
+                                Nombre Uniforme de Recursos (URN) es algo que 
+                                aún está en debate y que pretende definir un 
+                                espacio de nombres para etiquetar objetos 
+                                persistentes.</p>
+                                <p class="CompletoP">Un recurso es cualquier cosa 
+                                distinguible. Por ejemplo, un documento 
+                                electrónico, una imagen, un servicio, etc. Cabe 
+                                notar que no todos los recursos son recuperables 
+                                a través de la red (por ej.: seres humanos, 
+                                corporaciones y libros impresos, que también se 
+                                consideran recursos). Un recurso es, 
+                                básicamente, un concepto que puede mapearse a 
+                                una o a varias entidades, y que puede permanecer 
+                                constante a pesar de ver alterados sus 
+                                contenidos.</p>
+                                <p class="CompletoP">Diagrama correspondiente a la 
+                                especificación de URI, URL y URN, según el RFC 
+                                23 96.</p><pre>_______________________________________________________
+|         ________________                              |
+|        |  ftp:          |                             |
+|        |  gopher:       |                             |
+|        |  http:       __|____________                 |
+|        |  etc        |  |  urn:      |                |
+|        |_____________|__|            |                |
+|                URLs  |               |                |
+|                      |_______________|                |
+|                             URNs                      |
+|_______________________________________________________|</pre>
+                                <div class="CompletoH2"><a name="h2_2">¿Sintaxis 
+                                universal?</a></div>
+                                <p class="CompletoP">La pregunta ahora es, ¿por 
+                                qué es necesario uniformizar identificadores, 
+                                localizadores y nombres?</p>
+                                <p class="CompletoP">La respuesta está en la gran 
+                                cantidad de protocolos usados hoy en día para 
+                                encontrar y recuperar recursos en la red, y en 
+                                la cierta aparición de muchos protocolos más 
+                                debido al carácter explosivo de la expansión de 
+                                este campo.</p>
+                                <p class="CompletoP">Los sistemas en los que se 
+                                distribuye toda la información alcanzable 
+                                utilizan una variedad de plataformas y formatos 
+                                en constante evolución, que de no ser por los 
+                                protocolos y convertidores de formato adecuados, 
+                                no podrían ofrecer el acceso global que se da 
+                                hoy en día. Sin embargo, esto no es posible de 
+                                realizar al nivel de direcciones y nombres de 
+                                los objetos, dado que son usados para 
+                                identificarlos y distinguirlos. Además, estos 
+                                nombres y direcciones son "transmitidos" de las 
+                                más diversas maneras, desde memorándums hasta 
+                                hipertextos, por lo que debe suponerse que estos 
+                                identificadores tendrán una larga 
+existencia.</p>
+                                <p class="CompletoP">De todas las ideas 
+                                desarolladas en este aspecto, aparece una 
+                                característica común mapeable a la idea de un 
+                                "objeto" y su correspondiente 
+                                nombre/etiqueta/identificador. De esta manera se 
+                                puede definir un conjunto de espacies de nombres 
+                                en los que se dice que existen los objetos.</p>
+                                <p class="CompletoP">En la práctica, estos 
+                                sistemas deben tratar con una mezcla de objetos, 
+                                definidos por distintas propuestas. De aquí se 
+                                desprende la necesidad del concepto de conjunto 
+                                universal de objetos, y por ende del conjunto 
+                                universal de espacios de nombres. con esto se 
+                                permite tratar de una manera similar a objetos 
+                                pertenecientes a espacios de nombres distintos, 
+                                incluso entre los que tienen características 
+                                totalmente distintas.</p>
+                                <div class="CompletoH2"><a name="h2_3">URIs: 
+                                Identificadores Universales de 
+Recursos</a></div>
+                                <p class="CompletoP">Corresponden a una forma de 
+                                encapsular un nombre en un espacio de nombres 
+                                registrados, y etiquetarlo con el espacio de 
+                                nombres, produciendo un miembro del conjunto 
+                                universal.</p>
+                                <p class="CompletoP">La sintaxis universal permite 
+                                el acceso a objetos disponibles utilizando 
+                                protocolos existentes, y es capaz de ser 
+                                extendida con el tiempo.</p>
+                                <p class="CompletoP">Es necesario decir que la 
+                                especificación de la sintaxis URI no dice nada 
+                                acerca de las propiedades de los nombres y las 
+                                direcciones de los espacios de nombres que 
+                                mapea. Las propiedades salen de la 
+                                especificación de protocolos y las convenciones 
+                                de cada esquema.</p>
+                                <div class="CompletoH2"><a name="h2_4">URLs: 
+                                Localizadores Uniformes de Recursos</a></div>
+                                <p class="CompletoP">Para los protocolos de acceso 
+                                a Internet existentes, en la mayoría de los 
+                                casos se hace necesario definir la codificación 
+                                del algortimo de acceso en algo suficientemente 
+                                conciso para llamarse "dirección". Las URIs que 
+                                referencias objetos a los que se accede mediante 
+                                protocolos existentes se conocen como URLs.</p>
+                                <p class="CompletoP">Aunque muchos esquemas de 
+                                URLs son bautizados según el protocolo que 
+                                utilizan, esto no implica que la única forma de 
+                                acceder al recurso de la URL sea mediante ese 
+                                único protocolo. En particular, los servicios de 
+                                gateway, proxy, cache y resolución de nombres 
+                                pueden llegar a ser usados para acceder a 
+                                ciertos recursos, independientemente del 
+                                protocolo original, y la resolución de algunas 
+                                URLs puede requerir el uso de más de un 
+                                protocolo (por ejemplo, HTTP y DNS típicamente 
+                                son usados para acceder un recurso de URL "http" 
+                                cuando no se encuentre en el cache local).</p>
+                                <div class="CompletoH2"><a name="h2_5">URNs: Nombres 
+                                Uniformes de Recursos</a></div>
+                                <p class="CompletoP">Un URN difiere de una URL en 
+                                que su propósito principal es etiquetar 
+                                persistentemente un recurso con un 
+                                identificador. Este identificador es obtenido de 
+                                un conjunto de espacios de nombres definidos, 
+                                cada uno de los cuales tiene establecida su 
+                                propia estructura de nombres y procedimientos de 
+                                asignación. El esquema "urn" se encuentra 
+                                reservado para establecer una estandarización de 
+                                los requerimientos del espacio de nombres 
+                                URN.</p>
+                                <div class="CompletoH2"><a name="h2_6">Diseño</a></div>
+                                <div class="CompletoH3">Criterios para el 
+                                diseño</div>
+                                <p class="CompletoP">Dentro de los requerimientos 
+                                críticos para la sintaxis del esquema URI, se 
+                                encuentran:</p>
+                                <ul class="CompletoP">
+                                <li class="CompletoP">Que sea extensible. En otras 
+                                palabras, que pudiesen agregarse nuevos esquemas 
+                                de nombres a medida que fuese necesario. 
+                                </li><li class="CompletoP">Que sea completa. Que sea 
+                                posible codificar cualquier esquema existente 
+                                </li><li class="CompletoP">Que se pueda imprimir. Si es 
+                                necesario, un URI debe poder ser "transmitida" 
+                                usando papel y lápiz, por lo que debe ser 
+                                posible expresarla usando sólo caracteres ASCII 
+                                de 7 bits. </li></ul>
+                                <p class="CompletoP">Además, hay varios aspectos 
+                                del diseño relevantes al proceso de transmisión 
+                                de URIs:</p>
+                                <ul class="CompletoP">
+                                <li class="CompletoP">Un URI es una secuencia de 
+                                caracteres, la cual no siempre es representada 
+                                como una secuencia de bytes. 
+                                </li><li class="CompletoP">Un URI puede ser obtenido 
+                                desde una fuente desconectada de la red, y por 
+                                lo tanto debe consistir de caracteres tipeables 
+                                en un computador, con la restricciones impuestas 
+                                por los dispositivos de entrada en cada idioma y 
+                                configuración local. 
+                                </li><li class="CompletoP">A menudo se necesita que un 
+                                URI sea recordado por la gente, y para eso es 
+                                conveniente que sus componentes tengan algún 
+                                sentido. </li></ul>
+                                <p class="CompletoP">Estos aspectos del diseño no 
+                                siempre compatibilizan entre sí. Por ejemplo, si 
+                                se quisiera describir acabadamente una 
+                                componente de URI caeríamos en la utilización de 
+                                caracteres prohibitivos para ciertos sistemas. 
+                                La necesidad de poder transcribir fácil y 
+                                universalmente un URI fue elegida como 
+                                prioritaria.</p>
+                                <div class="CompletoH2"><a name="h2_7">Satisfacción 
+                                de criterios</a></div>
+                                <div class="CompletoH3">Extensibilidad</div>
+                                <p class="CompletoP">Se resolvió permitiendo una 
+                                cadena arbitraria (pero registrada) como 
+                                prefijo. La selección de los dos puntos (":") 
+                                como separador entre el prefijo y el resto de la 
+                                URI fue totalmente arbitraria.</p>
+                                <div class="CompletoH3">Completitud</div>
+                                <p class="CompletoP">Fue satisfecho permitiendo 
+                                que los nombres extraños (o incluso binarios) se 
+                                codificaran en base 16 o base 64 usando los 
+                                caracteres aceptables.</p>
+                                <div class="CompletoH3">Imprimibilidad</div>
+                                <p class="CompletoP">Inicialmente, s pertendió 
+                                establecer que debía codificarse cualquier 
+                                carácter que no perteneciese a un set básico; 
+                                pero la discusión se desvió a definir cuál sería 
+                                el set básico, considerando que, por ejemplo, 
+                                los sistemas que manejaran adecuadamente el set 
+                                de caracteres ISO Latin-1 no tendrían problemas 
+                                en utilizar esos caracteres localmente, pero que 
+                                el problema se suscitaría al transportar dichos 
+                                caracteres. La solución fue especificar un 
+                                conjunto de caracteres "seguro", y un esquema 
+                                general de escapado de caracteres que puede 
+                                utilizarse para escapar caracteres 
+                                "peligrosos".</p>
+                                <div class="CompletoH2"><a name="h2_8">Sintaxis</a></div>
+                                <div class="CompletoH3">Sintaxis general y 
+                                componentes principales de URLs</div>
+                                <p class="CompletoP">Así como hay diferentes 
+                                métodos de acceder a los recursos, hay varios 
+                                esquemas para describir su ubicación.</p>
+                                <p class="CompletoP">La sintaxis genérica para 
+                                URLs provee un marco de trabajo extensible, que 
+                                permite incorporar protocolos aún no 
+                                considerados o incluso aún no inventados</p>
+                                <p class="CompletoP">Las URL's, como su nombre lo 
+                                indica, localizan recursos mediante una 
+                                identificación abstracta. Una vez identificado 
+                                el recurso, un sistema puede operar de diversas 
+                                formas sobre él, como por ejemplo realizando 
+                                accesos, actualizándolo, reemplazándolo o 
+                                recuperando sus atributos. En general, sólo se 
+                                necesita especificar el método de acceso para 
+                                cada esquema URL.</p>
+                                <p class="CompletoP">En general, las URLs son de 
+                                la siguiente forma:</p><pre>&lt;esquema&gt;:&lt;sección_específica_al_esquema&gt;</pre>
+                                <p class="CompletoP">Una URL contiene el esquema 
+                                al cual corresponde, seguido de dos puntos y 
+                                posteriormente la cadena que localiza al recurso 
+                                en cuestión, y cuya interpretación pasa a ser 
+                                responsabilidad del esquema.</p>
+                                <p class="CompletoP">Los nombres de los esquemas 
+                                son secuencias de caracteres, dentro de los que 
+                                se permiten los literales "a".."z", los dígitos, 
+                                los símbolos "+", "." y "-". Para evitar 
+                                confusiones, las interpretaciones de URLs 
+                                debieran ignorar distinciones entre mayúsculas y 
+                                minúsculas (por ejemplo, "HTTP" debiera 
+                                permitirse y significar lo mismo que 
+"http").</p>
+                                <div class="CompletoH3">Codificación y caracteres 
+                                especiales</div>
+                                <p class="CompletoP">Las URIs están compuestas de 
+                                letras, dígitos y caracteres con significado 
+                                especial. Las convenciones sobre los caracteres 
+                                especiales son las siguientes:</p>
+                                <div class="CompletoH4">Escape (%)</div>
+                                <p class="CompletoP">El signo porcentaje 
+                                (hexadecimal 25) se usa para anular el 
+                                significado especial de los caracteres 
+                                especiales.</p>
+                                <div class="CompletoH4">Jerarquización (/)</div>
+                                <p class="CompletoP">El slash (hexadecimal 2F) se 
+                                reserva para delimitar substrings de relación 
+                                estrictamente jerárquica. Las subcadenas "." y 
+                                ".." son igualmete reserados. EL significado del 
+                                salsh entre dos segmentos es que el segmento de 
+                                la izquierda es más significativo que el de la 
+                                derecha.</p>
+                                <div class="CompletoH4">Identificador de 
+                                fragmentos (#)</div>
+                                <p class="CompletoP">El carácter "#" (hexadecimal 
+                                23) se reserva como delimitador para separar la 
+                                URI de un objecto de un identificador de 
+                                fragmento (resuelto en el cliente).</p>
+                                <div class="CompletoH4">Prefijo de consulta 
+                                (?)</div>
+                                <p class="CompletoP">Delimita la URI de un objeto 
+                                suscetpible de ser consultado, de la subcadena 
+                                que representa la consulta en sí misma. Cuando 
+                                se usa una URI con una consulta, la URI 
+                                resultante referencia al objeto que resulta de 
+                                aplicar la consulta al objeto original. Dentro 
+                                de la cadena de consulta, el símbolo "+" se 
+                                reserva como una abreviación del espacio (" "). 
+                                Por lo tanto, paa colocar un signo "+" tal cual 
+                                debe codificarse. Este método fue establecido 
+                                para facilitar el traspaso de URIs con consultas 
+                                a sistemas que no permiten espacios.</p>
+                                <div class="CompletoH4">Otros (*, !)</div>
+                                <p class="CompletoP">EL asterisco ("*", 
+                                hexadecimal 2A) y el signo de exclamación ("!", 
+                                hexadecimal 21) se reservan para darles un 
+                                significado especial dentro de los esquemas 
+                                específicos.</p>
+                                <p class="CompletoP">Además, la forma canónica de 
+                                las URIs establece que algunos caracteres, como 
+                                el espacio (" "), caracteres de control, 
+                                aquellos que varián su codificación en ASCII de 
+                                7 bits al pasar de un set nacionalizado a otro, 
+                                y todos los caracteres de 8 bits más allá del 7F 
+                                hexadecimal (DEL) del set ISO Latin-1, 
+                                nodebieran usarse sin codificar. Esta 
+                                codificación utiliza el símbolo de escape "%", 
+                                seguido por dos sígitos hexadecimales (0-9, 
+                                A-F), que corresponden al código del craácter en 
+                                ISO Latin-1.</p>
+                                <div class="CompletoH3">Jerarquizaciones y formas 
+                                relativas de URIs</div>
+                                <p class="CompletoP">Cuando se referencia una URL 
+                                absoluta desde el contexto de un documento, se 
+                                está incluyendo mucha información tal vez ya 
+                                conocida, y que podría extraerse del contexto 
+                                del documento original (como por ejemplo el 
+                                esquema, la ubicación dentro de la red, y partes 
+                                de la ruta de acceso). En estos casos es cuando 
+                                se justifica usar URL's relativas. En ellas se 
+                                identifica el recurso describiendo la diferencia 
+                                con un espacio de nombres jerárquico ente el 
+                                contexto actual y un identificador absoluto del 
+                                recurso</p>
+                                <p class="CompletoP">Algunos esquemas URI soportan 
+                                un sistema de nombres jerárquico, donde la 
+                                jerarquía del nombre se denota por el 
+                                delimitador "/" ente componentes del esquema. 
+                                Esta forma de jerarquización es independiente 
+                                del esquema y puede ser usada junto con una URI 
+                                "base" para producir otra URI.</p>
+                                <div class="CompletoH2"><a name="h2_9">Esquemas y 
+                                Aplicaciones</a></div>
+                                <p class="CompletoP">Algunos de los esquemas URL 
+                                existentes hoy en día son:</p><pre>ftp                     File Transfer protocol
+http                    Hypertext Transfer Protocol
+gopher                  The Gopher protocol
+mailto                  Electronic mail address
+news                    USENET news
+nntp                    USENET news using NNTP access
+telnet                  Reference to interactive sessions
+wais                    Wide Area Information Servers
+file                    Host-specific file names
+prospero                Prospero Directory Service</pre>
+                                <div class="CompletoH3">Sintaxis usual</div>
+                                <p class="CompletoP">Mientras que la sintaxis para 
+                                el resto de la URL puede variar dependiendo del 
+                                esquema del que se trate, los esquemas URL que 
+                                incluyen el uso directo de un protocolo basado 
+                                en IP a un host específico en Internet usan una 
+                                sintaxis común para la parte específica al 
+                                esquema:</p><pre>//&lt;user&gt;:&lt;password&gt;@&lt;host&gt;:&lt;port&gt;/&lt;url-path&gt;</pre>
+                                <p class="CompletoP">Algunas de o todas las partes 
+                                (exceptuando &lt;host&gt;) pueden ser omitidas. 
+                                Se comienza con un doble slash para indicar que 
+                                se ajusta a la sintaxis común de Internet. Cada 
+                                una de las partes se explica a continuación:</p>
+                                <div class="CompletoH4">user</div>
+                                <p class="CompletoP">Algunos esquemas (como el 
+                                ftp) permiten especificar un username 
+                                (opcionalmente)</p>
+                                <div class="CompletoH4">password</div>
+                                <p class="CompletoP">Si se presenta, debe estar 
+                                separado del username por dos puntos (":") El 
+                                username (o el password), de estar presente, 
+                                debe ir seguido de un símblo arroba "@" al 
+                                final. Dentro del username y el password, 
+                                cualquier ":", "@" o "/" debe estar 
+                                respectivamente codificado.</p>
+                                <div class="CompletoH4">host</div>
+                                <p class="CompletoP">Un nombre de dominio 
+                                (completo) o host, o su dirección IP.</p>
+                                <div class="CompletoH4">port</div>
+                                <p class="CompletoP">El número del puerto al cual 
+                                conectarse. La mayoría de los protocolos tienen 
+                                ya un número de puerto asignado por defecto.</p>
+                                <div class="CompletoH4">url-path</div>
+                                <p class="CompletoP">El resto corresponde a datos 
+                                específicos del esquema, y contiene detalles de 
+                                cómo el recurso especificado debiera ser 
+                                accedido. El "/" entre el host (o número de 
+                                puerto) y el url-path noes parte del 
+                                url-path.</p>
+                                <div class="CompletoH3">Ejemplo: FTP</div>
+                                <p class="CompletoP">El esquema URL para FTP es 
+                                usado para designar archivos y directorios en 
+                                hosts alcanzables por medio del protocolo FTP en 
+                                Internet.</p>
+                                <p class="CompletoP">Una URL de FTP sigue la 
+                                sintaxis usual descrita anteriormente. Si se 
+                                omite :&lt;port&gt;, se toma el valor por 
+                                defecto, 21</p>
+                                <div class="CompletoH4">Nombre y password</div>
+                                <p class="CompletoP">Si se especifican un username 
+                                y password como se definió en el punto anterior, 
+                                éstos se utilizan en los comandos ftp "USER" y 
+                                "PASS" luego de realizar la conexión con del 
+                                servidor FTP. Si no se provee ninguno de los dos 
+                                y el servidor los requiere, se utilizan las 
+                                convenciones de FTP anónimo, que son:</p>
+                                <ul class="CompletoP">
+                                <li class="CompletoP">Se suministra el usename 
+                                "anonymous". 
+                                </li><li class="CompletoP">El password entregado es la 
+                                dirección e-mail del usuario accediendo al 
+                                recurso. </li></ul>
+                                <p class="CompletoP">Si la URL incluye un username 
+                                pero no un password, y el servidor remoto 
+                                requiere un password, el programa que esté 
+                                interpretando la URL FTP debiera pedírselo al 
+                                usuario.</p>
+                                <div class="CompletoH4">url-path de FTP</div>
+                                <p class="CompletoP">El url-path de una URL FTP 
+                                tiene la siguiente sintaxis: 
+                                &lt;cwd1&gt;/&lt;cwd2&gt;/.../&lt;cwdN&gt;/&lt;name&gt;;type=&lt;typecode&gt; 
+                                Donde &lt;cwd1&gt; hasta &lt;cwdn&gt; y 
+                                &lt;name&gt; son cadenas (posiblemente 
+                                codificadas) y &lt;typecode&gt; es uno de los 
+                                caracteres "a", "i" o "d". Esta última parte 
+                                puede además ser omitida, así como también toda 
+                                la parte del url-path (incluyendo el "/"). El 
+                                url-path es interpretado de la siguiente 
+                                forma:</p>
+                                <ul class="CompletoP">
+                                <li class="CompletoP">Cada uno de los elementos 
+                                &lt;cwd&gt; es suministrado como argumento al 
+                                comando CWD, secuencialmente. 
+                                </li><li class="CompletoP">Si el &lt;typecode&gt; es 
+                                "d", realizar un comando NLST (listar nombres) 
+                                con &lt;name&gt; como argumento, e iterpretar 
+                                los resultados como un listado de directorio. 
+                                </li><li class="CompletoP">De otro modo, ejecutar un 
+                                comando TYPE con &lt;typecode&gt; como 
+                                argumento, y luego acceder al archivo cuyo 
+                                nombre es &lt;name&gt; (usando, por ejemplo, el 
+                                comando RETR) </li></ul>
+                                <div class="CompletoH2"><a name="h2_10">Implicancias, Críticas y 
+                                Limitaciones</a></div>
+                                <div class="CompletoH3">Registro de nuevos 
+                                esquemas</div>
+                                <p class="CompletoP">Se introduce un nuevo 
+                                esquema, definiendo el mapeado correspondiente 
+                                según la sintaxis de URLs, y usando un prefijo 
+                                nuevo. En particular, los esquemas URL en 
+                                experimentación son utilizables en común acuerdo 
+                                entre las partes involucaradas (los esquemas con 
+                                nombres que comiencen en "x-" se reservan para 
+                                experimentación).</p>
+                                <p class="CompletoP">Se mantiene un registro de 
+                                esquemas URL, a cargo de IANA (Internet Assigned 
+                                Numbers Authority). Cualquier proposición de 
+                                esquema URL debe incluir la definición de un 
+                                algoritmo de acceso a recursos localizables 
+                                dentro de ese esquema, y la sintaxis para 
+                                representarla.</p>
+                                <p class="CompletoP">Los esquemas deben ser 
+                                (demostrablemente) útiles y operables. Deben 
+                                tratar, además, de seguir las mismas 
+                                convenciones sintácticas de los ya 
+                                existentes.</p>
+                                <div class="CompletoH3">Seguridad</div>
+                                <p class="CompletoP">Un esquema URL no es en sí 
+                                una amenaza a la seguridad. Los usuarios 
+                                debieran estar al tanto de que no hay una 
+                                garantía general de que una el objeto 
+                                referenciado por una URL sea siempre el 
+                                mismo.</p>
+                                <p class="CompletoP">La amenaza de seguridad 
+                                relativa a las URLs consiste en que algunas 
+                                veces es posible construir una URL tal que un 
+                                intento por realizar alguna operación inocua 
+                                (como recuperar el objeto) cause en realidad una 
+                                operación remota peligrosa. Esta URL insegura 
+                                aparece por lo general cuando se especifica un 
+                                puerto distinto del asignado por defecto al 
+                                protocolo en cuestión. El cliente 
+                                desinformadamente contacta a un servidor que 
+                                está atendiendo oyto protocolo por ese puerto; y 
+                                los contenidos de la URL le proveen 
+                                instrucciones le proveen instrucciones a este 
+                                protocolo, que pueden causar resultados 
+                                inesperados. (Por ejemplo, gonectar a un cliente 
+                                gopher al pueto SMTP de un servidor puede 
+                                ocasionar que se distribuyan mensajes de 
+                                contenido "bizarro", por decir lo menos). Es por 
+                                esto que se debe ser muy cauteloso al usar una 
+                                URL que especifique un puerto distinto de 
+                                asignado al protocolo, sobre todo cuando este 
+                                nombre "choca" con alguno también ya 
+                                definido.</p>
+                                <p class="CompletoP">Otro riesgo se da cuando la 
+                                url contiene (codificados) delimitadores para un 
+                                cierto protocolo (por ejemplo, CR y LF en el 
+                                caso de telnet) que no hayan sido decodificados 
+                                antes de ser transmitidos. Esto ocasionaría que 
+                                se simulara un parámetro u operación extra, 
+                                causando tal vez que se ejecutara alguna 
+                                operación dañina.</p>
+                                <p class="CompletoP">Por último, es obviamente no 
+                                recomendable el utilizar URLs que contenags 
+                                passwords que no deban ser dadas a conocer</p>
+                                <div class="CompletoH2"><a name="h2_11">Referencias</a></div>
+                                <ul class="CompletoP">
+                                <li class="CompletoP">Berners-Lee, T., "Universal 
+                                Resource Identifiers in WWW: A Unifying Syntax 
+                                for the Expression Objects on the Network as 
+                                used in the World-Wide Web", RFC 1630, CERN, 
+                                June 1994. 
+                                </li><li class="CompletoP">Berners-Lee, T., Masinter, 
+                                L., and M. McCahill, Editors, "Uniform Resource 
+                                Locators (URL)", RFC 1738, CERN, Xerox 
+                                Corporation, University of Minnesota, December 
+                                1994. 
+                                </li><li class="CompletoP">Postel, J. and J. Reynolds, 
+                                "<a class="CompletoPLINK" href="ftp://ds.internic.net/rfc/rfc959.txt">File 
+                                Transfer Protocol (FTP)</a>", STD 9, 
+                                <ol class="CompletoP" type="A">
+                                <li class="CompletoP" style="LIST-STYLE-IMAGE: none">RFC 959, 
+                                USC/Information Sciences Institute, October 
+                                1985. </li></ol></li></ul>
+                                <div class="CompletoH2"><a name="h2_12">Apendice: 
+                                Gramática para URI</a></div>
+                                <p class="CompletoP">La siguiente es la gramática 
+                                en BNF que corresponde a la especificación de 
+                                URI.</p><pre>URI-reference = [ absoluteURI | relativeURI ] [ "#" fragment ]
+   absoluteURI   = scheme ":" ( hier_part | opaque_part )
+   relativeURI   = ( net_path | abs_path | rel_path ) [ "?" query ]
+
+   hier_part     = ( net_path | abs_path ) [ "?" query ]
+   opaque_part   = uric_no_slash *uric
+
+   uric_no_slash = unreserved | escaped | ";" | "?" | ":" | "@" |
+                   "&amp;" | "=" | "+" | "$" | ","
+
+   net_path      = "//" authority [ abs_path ]
+   abs_path      = "/"  path_segments
+   rel_path      = rel_segment [ abs_path ]
+
+   rel_segment   = 1*( unreserved | escaped |
+                       ";" | "@" | "&amp;" | "=" | "+" | "$" | "," )
+
+   scheme        = alpha *( alpha | digit | "+" | "-" | "." )
+
+   authority     = server | reg_name
+
+   reg_name      = 1*( unreserved | escaped | "$" | "," |
+                       ";" | ":" | "@" | "&amp;" | "=" | "+" )
+
+   server        = [ [ userinfo "@" ] hostport ]
+   userinfo      = *( unreserved | escaped |
+                      ";" | ":" | "&amp;" | "=" | "+" | "$" | "," )
+
+   hostport      = host [ ":" port ]
+   host          = hostname | IPv4address
+   hostname      = *( domainlabel "." ) toplabel [ "." ]
+   domainlabel   = alphanum | alphanum *( alphanum | "-" ) alphanum
+   toplabel      = alpha | alpha *( alphanum | "-" ) alphanum
+   IPv4address   = 1*digit "." 1*digit "." 1*digit "." 1*digit
+   port          = *digit
+
+   path          = [ abs_path | opaque_part ]
+   path_segments = segment *( "/" segment )
+   segment       = *pchar *( ";" param )
+   param         = *pchar
+   pchar         = unreserved | escaped |
+                   ":" | "@" | "&amp;" | "=" | "+" | "$" | ","
+
+   query         = *uric
+
+   fragment      = *uric
+
+   uric          = reserved | unreserved | escaped
+   reserved      = ";" | "/" | "?" | ":" | "@" | "&amp;" | "=" | "+" |
+                   "$" | ","
+   unreserved    = alphanum | mark
+   mark          = "-" | "_" | "." | "!" | "~" | "*" | "'" |
+                   "(" | ")"
+
+   escaped       = "%" hex hex
+   hex           = digit | "A" | "B" | "C" | "D" | "E" | "F" |
+                           "a" | "b" | "c" | "d" | "e" | "f"
+
+   alphanum      = alpha | digit
+   alpha         = lowalpha | upalpha
+
+   lowalpha = "a" | "b" | "c" | "d" | "e" | "f" | "g" | "h" | "i" |
+              "j" | "k" | "l" | "m" | "n" | "o" | "p" | "q" | "r" |
+              "s" | "t" | "u" | "v" | "w" | "x" | "y" | "z"
+   upalpha  = "A" | "B" | "C" | "D" | "E" | "F" | "G" | "H" | "I" |
+              "J" | "K" | "L" | "M" | "N" | "O" | "P" | "Q" | "R" |
+              "S" | "T" | "U" | "V" | "W" | "X" | "Y" | "Z"
+   digit    = "0" | "1" | "2" | "3" | "4" | "5" | "6" | "7" |
+              "8" | "9"</pre></td></tr></tbody></table></td></tr></tbody></table></td></tr></tbody></table><!--end-box--></td></tr>
+              <tr>
+                <td class="FondoBlanco1BG" valign="top" width="72%"><!--begin-box:Colofon:Pie:2683--><!--loc('* Menú Vertical')-->
+                  <div style="FONT-SIZE: 1px; LINE-HEIGHT: 40px; HEIGHT: 40px" align="center"></div>
+                  <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                    <tbody>
+                    <tr>
+                      <td class="PieBC">
+                        <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                          <tbody>
+                          <tr>
+                            <td class="PieBD">
+                              <table border="0" width="100%">
+                                <tbody>
+                                <tr>
+                                <td class="PieT2"><a class="PieT2LINK" onmouseover="changeImage('aid1071_cc_small','articles-1071_cc_small.jpeg')" onmouseout="changeImage()" href="http://www.tejedoresdelweb.com/307/article-1071.html"><img alt="ChaTo = Carlos Castillo, Ph.D.  :::  Acerca de este Sitio" src="Tejedores%20del%20Web%20-%20URI%20y%20URL_files/articles-1071_cc_small.jpg" name="aid1071_cc_small" align="middle" border="0"></a> 
+                                <a class="PieT2LINK" href="http://www.tejedoresdelweb.com/307/article-1071.html">ChaTo 
+                                = Carlos Castillo, Ph.D. ::: Acerca de este 
+                                Sitio</a></td></tr></tbody></table></td></tr></tbody></table></td></tr></tbody></table><!--end-box--></td>
+                <td class="FondoBlanco1BG" valign="top" width="3%"></td></tr></tbody></table></td></tr></tbody></table></td></tr></tbody></table>
+</body></html>

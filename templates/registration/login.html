@@ -10,7 +10,7 @@
 
 {% block content %}
   <div class="form-actions" >
-    <p>Register and get your profile of links private, share them and comment.</p>
+    <p>Register and get your profile of links, share them and comment about others profiles.</p>
     
     <form id="login-form" action="{% url auth_login %}?next={{ next }}" method="post">
     {% csrf_token %}
